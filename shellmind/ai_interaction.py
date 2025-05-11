@@ -65,7 +65,7 @@ class AIInteraction:
                 temperature=self.temperature,
                 max_tokens=self.max_tokens
             )
-            command = response.choices[0].message.content.strip()
+            command = response.choices[0].message.content.strip().replace("`","")
 
             if not command or command.startswith("Error:"):
                 return "Error: AI failed to generate a valid command"
