@@ -23,9 +23,8 @@ ShellMind is an AI-powered command-line tool designed to translate natural langu
     
     **Method 1: Using a Virtual Environment (Recommended)**
     *   Clone the repository (once available on a version control system like Git).
-    <br>
-     ```bash 
-     git clone https://github.com/aliasadi313/ShellMind 
+     ```bash
+        git clone https://github.com/aliasadi313/ShellMind 
      ```
 
     *   Navigate to the project directory.
@@ -44,7 +43,7 @@ ShellMind is an AI-powered command-line tool designed to translate natural langu
     **Method 2: Editable Install**
     *   Clone the repository (once available on a version control system like Git). <br>
      ```bash 
-     git clone https://github.com/aliasadi313/shellmind 
+     git clone https://github.com/aliasadi313/ShellMind 
      ```
     *   Navigate to the project directory.
     ```bash
