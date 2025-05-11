@@ -51,12 +51,15 @@ class ConfigManager:
         except Exception as e:
             print(f"Error saving config file: {e}")
 
-    def get(self, key):
-        return self.config.get(key)
-
+    def get(self, key, default=None):
+        return self.config.get(key, default)
+    
     def set(self, key, value):
         if key in self.DEFAULT_CONFIG:
             self.config[key] = value
             self._save_config(self.config)
         else:
-            print(f"Error: Key is not a recognized configuration option. Supported keys are: {', '.join(self.DEFAULT_CONFIG.keys())}")
+            raise ValueError(
+                f"Key {key} is not a recognized configuration option. "
+                f"Supported keys are: {', '.join(self.DEFAULT_CONFIG.keys())}"
+            )

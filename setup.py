@@ -13,4 +13,11 @@ setup(
         'openai',
         'PyYAML'
     ],
+    extras_require={
+        'test': [
+            'pytest>=7.0',
+            'pytest-cov>=3.0',
+            'mock>=4.0',
+        ],
+    },
 )
