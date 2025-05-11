@@ -1,8 +1,0 @@
-Metadata-Version: 2.4
-Name: shellmind
-Version: 0.1
-License-File: LICENSE
-Requires-Dist: openai
-Requires-Dist: PyYAML
-Dynamic: license-file
-Dynamic: requires-dist

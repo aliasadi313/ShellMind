@@ -1,2 +1,0 @@
-shellmind
-tests
